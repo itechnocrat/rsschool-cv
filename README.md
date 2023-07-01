@@ -1,1 +1,1 @@
-https://itechnocrat.github.io/rsschool-cv/cv.md
+https://itechnocrat.github.io/rsschool-cv/cv
