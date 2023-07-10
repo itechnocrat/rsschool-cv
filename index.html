@@ -6,15 +6,228 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/img/favicon.ico">
 </head>
 
 <body>
 
-  <div class="parent">
-    <p class="child">It's works!!!</p>
+  <div class="container-nav">
+    <header>
+      <nav>
+        <div class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#profile">profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutme">about me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#code">code</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#courses">courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#english">english</a></li>
+          </ul>
+      </nav>
+    </header>
   </div>
 
+
+  <div class="container-main">
+    <main>
+
+      <section id="profile">
+        <div class="profile-grid">
+
+
+          <div class="profile-grid-column-one">
+            <!-- <section class="section" id="profile"> -->
+            <div class="frame">
+              <img class="ava" src="assets/img/ava.png" alt="avatar">
+            </div>
+            <!-- </section> -->
+          </div>
+
+          <div class="profile-grid-column-two">
+            <!-- <section> -->
+            <div class="frame">
+              <h1>Ivan Prokofyev</h1>
+              <p class="prof">Developer</p>
+            </div>
+            <!-- </section> -->
+          </div>
+
+
+          <div class="profile-grid-column-three">
+            <div class="frame">
+              <!-- <section class="contacts" id="contacts"> -->
+              <h2>Contacts</h2>
+              <ul>
+                <li>Russia, Moscow</li>
+                <li>email:<span class="email">ivan.prokofyev@gmail.com</span></li>
+                <li>Discord RSS:<span class="discord">technocrat @itechnocrat</li>
+                <li>Discord:<span class="discord">technocrat1</li>
+              </ul>
+              <!-- </section> -->
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <section id="aboutme">
+        <h2>About me</h2>
+        <ul>
+          <li>Out of curiosity, I study various technologies.
+            I love learning and discovering new things!</li>
+        </ul>
+      </section>
+
+
+      <section id="skills">
+        <h2>technical summary</h2>
+        <div class="skills-grid">
+
+          <div class="skills-grid-column-one skills-grid-row-one">
+            <h3>hardware</h3>
+            <ul>
+              <li>Ethernet (10, 100, 1000),routers, switches, Wi-Fi: routers, switches, access points; Intel x86, AMD x64 computers and all peripheral
+                equipment, WAGO
+                PLC, EIB/KNX equipment, Z-Wave equipment, AVR MCU: ATmega, ESP, STM; RaspberryPi.</li>
+            </ul>
+          </div>
+
+          <div class="skills-grid-column-two skills-grid-row-one">
+            <h3>operation system</h3>
+            <ul>
+              <li>Linux: Ubuntu, Ubuntu Server, Arch, MS Windows, MikroTik RouterOS.</li>
+            </ul>
+          </div>
+
+          <div class="skills-grid-column-one skills-grid-row-two">
+            <h3>software</h3>
+            <ul>
+              <li>Apache, MySQL, Oracle VM VirtualBox, Vagrant, Docker, Git, CMS/CMF: WordPress, Drupal; LVM2, SSH, SMB, FTP-servers, NFS,
+                programmable RAID, Firewall (netfilter + iptables), VPN: WireGuard; CoDeSys v2, PlatformIO, Arduino.</li>
+            </ul>
+          </div>
+
+          <div class="skills-grid-column-two skills-grid-row-two">
+            <h3>programming languages</h3>
+            <ul>
+              <li>Some experience:</li>
+              <li>Shell, Pascal, Assembler (Intel x86), C, C++, PHP, Java, Python, Lisp, Haskell, JS, SQL, IEC 61131-3 Programming Languages.</li>
+            </ul>
+          </div>
+
+          <div class="skills-grid-column-one skills-grid-row-three">
+            <h3>others</h3>
+            <ul>
+              <li>LibreOffice, Inkscape, GIMP, GanttProject, ProjectLibre, Trello (Canban), Evernote, CAD systems.</li>
+            </ul>
+          </div>
+
+          <div class="skills-grid-column-two skills-grid-row-three">
+            <h3>ability</h3>
+            <ul>
+              <li>Blind typing method with 10 fingers on the English layout "Dvorakfor programmers" and on the Russian layout "Russian Typewriter".
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section id="code">
+
+        <h2>code "Recursion instead of Loop"</h2>
+
+        <div class="code-grid">
+
+          <div class="code-grid-column-one">
+            <h4>using a loop</h4>
+            <div class="code">
+              <code>
+            <span class="indent-1">function sumTo_for(n) {</span>
+            <span class="indent-2">for (var sum = n; n > 0; n--) {</span>
+                <span class="indent-3">sum = sum + (n - 1);</span>
+              <span class="indent-2">}</span>
+              <span class="indent-2">return sum;</span>
+            <span class="indent-1">}</span>
+          </code>
+            </div>
+          </div>
+          <div class="code-grid-column-two">
+            <h4>using of recursion</h4>
+            <div class="code">
+              <code>
+            <span class="indent-1">function sumTo_recurs(n) {</span>
+              <span class="indent-2">var sum = n;</span>
+              <span class="indent-3">if (n == 1) return sum;</span>
+              <span class="indent-4">else return (n + sumTo_recurs(n-1));</span>
+              <span class="indent-1">}</span>
+            </code>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section id="education">
+        <h2>education</h2>
+        <ul>
+          <li>Military school</li>
+        </ul>
+      </section>
+
+
+      <section id="courses">
+        <h2>courses</h2>
+        <ul>
+          <!-- TODO change bad symbols to special symbols -->
+          <li>2014 - "Z-Wave.Me Introduction", certificate from RUSSIA traning center <span class="address">rus.z-wave.me</span></li>
+          <li>2017 - "KNX Basic Course", JUNG traning center, certificate from <span class="address">www.knx.org</span></li>
+          <li>2023 - RS Shool "JavaScript/Front-End. Stage 0"</li>
+        </ul>
+      </section>
+
+
+      <section id="english">
+        <h2>foreign languages</h2>
+        <ul>
+          <li>Before A1 English, reading technical documentanion</li>
+          <li>Native speaker of Russian</li>
+        </ul>
+      </section>
+
+
+    </main>
+  </div>
+
+  <div class="container-footer">
+
+    <footer class="footer">
+
+      <div class="footer-grid">
+        <div class="footer-grid-column-one">
+          <span class="copyright">2023 &#169;technocrat</span>
+        </div>
+
+        <div class="footer-grid-column-two">
+          <a href="https://wearecommunity.io/events/js-stage0-rs-2023q2">
+            <img class="rss" src="assets/svg/rs_school_js.svg" alt="https://wearecommunity.io/events/js-stage0-rs-2023q2">
+          </a>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+  </div>
 </body>
 
 </html>
