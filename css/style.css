@@ -1,20 +1,368 @@
-.parent {
-  margin: 10;
-  padding: 10;
-  position: relative;
-  height: 100vh;
-  background-color: #1F2430;
+/* позиционирование
+блочная модель (размеры, отступы)
+типографика (свойства шрифта)
+оформление (цвет фона, тень)
+анимация */
+
+html {
+  scroll-behavior: smooth;
 }
 
-.child {
-  font-family: FiraMono;
-  margin: 0;
+body {
+  font-family: "Veteran Typewriter";
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+header {
+  border: 0;
+  /* border: 1px solid green; */
+}
+
+main {
+  border: 0;
+  /* padding: 0 1ex 0 1ex; */
+  /* border: 1px solid #000000; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-size: 22px; */
+  font-weight: bold;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  /* padding-top: 1ex; */
+  text-transform: capitalize;
+  padding-top: 1ex;
+}
+
+h3 {
+  text-transform: capitalize;
+  text-decoration: underline;
+  /* margin-top: 1ex; */
+}
+
+h4 {
+  text-transform: lowercase;
+  text-align: center;
+  /* letter-spacing: 1ex; */
+  /* text-align: center; */
+}
+
+h5 {
+  font-weight: normal;
+}
+
+h6 {
+  font-weight: normal;
+}
+
+ul {
+  visibility: visible;
+  /* margin: 0 0 1ex 2ex; */
+  /* border: 1px solid red; */
+}
+
+li {
+  list-style: none;
+  padding-left: 1ex;
+}
+
+code {
+  font-family: "Veteran Typewriter";
+}
+
+.nav-bar {
+  line-height: 5ex;
+}
+
+.nav-list {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-self: center; */
+}
+
+.nav-item {
+  display: inline;
+  padding: 0 0;
+  margin: 0 1ex;
+  /* transition: 0.3s; */
+  list-style: none;
+  /* border: 1px solid red; */
+}
+
+.nav-link {
+  /* display: inline-block; */
+  /* padding: 0 0;
+  margin: 0 0;
+  color: red; */
+  text-decoration: none;
+  text-transform: capitalize;
+  /* transition: color 0.5s; */
+  /* border: 1px solid red; */
+}
+
+.container-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
+.container-main {
+  max-width: 1000px;
+  padding-left: 1ex;
+  padding-left: 1ex;
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: #e5e4e2;
+  border-right-color: #e5e4e2;
+  border-bottom-color: #e5e4e2;
+  border-left-color: #e5e4e2;
+  box-shadow: 5px 5px 10px #848884;
+}
+
+.container-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
+.ava {
+  width: 250px;
+  height: 250px;
+  filter: grayscale(100%);
+}
+
+.email {
+  font-weight: bold;
+  padding-left: 1ex;
+  /* text-decoration: underline; */
+}
+
+.discord {
+  font-weight: bold;
+  padding-left: 1ex;
+}
+
+.address {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 1;
+  /* border: 1px solid red; */
+}
+
+.profile-grid-column-one {
+  grid-column: 1;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-self: center;
+  justify-self: center;
+  /* border: 1px solid red; */
+}
+
+.profile-grid-column-two {
+  grid-column: 2;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-self: center;
+  justify-self: center;
+  /* border: 1px solid red; */
+}
+
+.profile-grid-column-three {
+  grid-column: 3;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-self: center;
+  justify-self: center;
+  /* border: 1px solid red; */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  gap: 1ex;
+}
+
+.skills-grid-column-one {
+  grid-column: 1;
+  grid-row: 1;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-self: center;
+  justify-self: center; */
+  /* border: 1px solid red; */
+}
+
+.skills-grid-column-two {
+  grid-column: 2;
+  grid-row: 1;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-self: center;
+  justify-self: center; */
+  /* border: 1px solid red; */
+}
+
+.skills-grid-row-one {
+  grid-row: 1;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* border: 1px solid red; */
+}
+
+.skills-grid-row-two {
+  grid-row: 2;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* border: 1px solid red; */
+}
+
+.skills-grid-row-three {
+  grid-row: 3;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* border: 1px solid red; */
+}
+
+.code-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  align-self: center;
+  justify-self: center;
+  /* border: 1px solid red; */
+}
+
+.code-grid-column-one {
+  grid-column: 1;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-self: center; */
+  /* justify-self: center; */
+  /* border: 1px solid red; */
+}
+
+.code-grid-column-two {
+  grid-column: 2;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-self: center; */
+  /* justify-self: center; */
+  /* border: 1px solid red; */
+}
+
+.frame {
+  /* margin-left: 2ex;
+  margin-right: 2ex; */
+  /* padding: 5ex; */
+  border: 0;
+}
+
+.section-item a:hover {
+  color: #4d2323;
+}
+
+.rss {
   padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 10vh;
-  color: red;
+  margin: 0;
+  margin-top: 5px;
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/svg/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.code {
+  visibility: visible;
+  /* margin-top: 1ex;
+  margin-bottom: 1ex; */
+}
+
+.indent-1 {
+  padding-left: 2ex;
+  display: block;
+}
+
+.indent-2 {
+  padding-left: 4ex;
+  display: block;
+}
+
+.indent-3 {
+  padding-left: 6ex;
+  display: block;
+}
+
+.indent-4 {
+  padding-left: 8ex;
+  display: block;
+}
+
+.indent-5 {
+  padding-left: 10ex;
+  display: block;
+}
+
+.copyright {
+  display: inline;
+}
+
+.logo {
+  padding: 10px;
+  margin: 0;
+  display: inline;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  /* align-self: center;
+  justify-self: center; */
+  /* border: 1px solid red; */
+}
+
+.footer-grid-column-one {
+  grid-column: 1;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-self: center;
+  justify-self: center;
+  /* border: 1px solid red; */
+}
+
+.footer-grid-column-two {
+  grid-column: 2;
+  /* grid-row: 1; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-self: center;
+  justify-self: center;
+  /* border: 1px solid red; */
 }
