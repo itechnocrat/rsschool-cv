@@ -121,9 +121,11 @@ code {
 
 .container-main {
   max-width: 1000px;
-  padding-left: 1ex;
-  padding-left: 1ex;
-  margin: 0 auto;
+  margin: 1ex auto;
+  padding-top: 2ex;
+  padding-left: 4ex;
+  padding-right: 4ex;
+  padding-bottom: 4ex;
   border-width: 1px;
   border-style: solid;
   border-top-color: #e5e4e2;
@@ -131,12 +133,6 @@ code {
   border-bottom-color: #e5e4e2;
   border-left-color: #e5e4e2;
   box-shadow: 5px 5px 10px #848884;
-}
-
-.container-footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  /* border: 1px solid #f00; */
 }
 
 .ava {
@@ -202,7 +198,7 @@ code {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 3;
-  gap: 1ex;
+  gap: 2ex;
 }
 
 .skills-grid-column-one {
@@ -275,17 +271,6 @@ code {
   /* border: 1px solid red; */
 }
 
-.frame {
-  /* margin-left: 2ex;
-  margin-right: 2ex; */
-  /* padding: 5ex; */
-  border: 0;
-}
-
-.section-item a:hover {
-  color: #4d2323;
-}
-
 .rss {
   padding: 0;
   margin: 0;
@@ -328,14 +313,26 @@ code {
   display: block;
 }
 
+.container-footer {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: normal; */
+  max-width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid #f00; */
+}
+
 .copyright {
   display: inline;
+  border: 1px solid red;
 }
 
 .logo {
   padding: 10px;
   margin: 0;
   display: inline;
+  border: 1px solid red;
 }
 
 .footer-grid {
